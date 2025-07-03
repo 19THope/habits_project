@@ -11,7 +11,8 @@ A command-line habit tracking application that helps you build and maintain good
 # Project Structure 🗂️
  ```
  habits/
-  ├── main.py                 # Main application entry point
+  ├── .venv/                  # Python virtual environment
+  ├── _init_.p              
   ├── analytics/
   │   ├── __init__.py
   │   └── analytics_module.py # All analytical functions
@@ -21,18 +22,49 @@ A command-line habit tracking application that helps you build and maintain good
   ├── models/
   │   ├── __init__.py
   │   └── habit.py           # Habit model definition
+  ├── main.py                # Main application entry point
+  ├── _init_.py 
   ├── .gitignore
+  ├── requirements.txt
   └── README.md 
 ```
-# Installation ⚙️
+### Prerequisites
+- Python 3.8+
+- pip package manager
+
+### Installation ⚙️
 1. Clone the repository
-    * git clone https://github.com/yourusername/habits.git
-    * cd habits
-2. Ensure you have Python 3.8+ installed
+  ```
+    git clone https://github.com/yourusername/habits.git
+    cd habits
+  ```
+2. Set up virtual environment
+ ``` 
+  # Create virtual environment
+  python -m venv .venv
+
+  # Activate it
+  # On Windows:
+  .venv\Scripts\activate
+
+  # On macOS/Linux:
+  source .venv/bin/activate
+  ```
+3. Install dependencies
+```
+pip install -r requirements.txt
+pip freeze > requirements.txt    # Optional for updating requirements if they already existed
+```
 
 # Usage 🚀
   Run the application: 
-  * python main.py
+  ```
+  python main.py
+  ```
+### Deactivating virtual evironment
+```
+deactivate
+```
 
 
 __Menu Options:__

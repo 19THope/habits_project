@@ -1,0 +1,3 @@
+# Core dependencies
+sqlite3>=3.0          # Built-in Python library 
+python-dateutil>=2.8  # For date handling
